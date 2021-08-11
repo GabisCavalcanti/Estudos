@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flex</title>
+</head>
+<style>
+	body {
+		margin: 0px;
+	}
+
+	main {
+		background: darkred;
+		width: 100%; /* tamanho total do dispositivo */
+		height: auto; /* tamanho do conteúdo interno do mesmo conteudo filho */
+		display: flex; /* informa que o main tem uma propriedade flex */
+		flex-direction: row; /* direçao em linha horizontal */
+		justify-content: space-between;
+		
+	}
+
+	div {
+		width: 50px;
+		height: 50px;
+		background: darkblue;
+		margin: 20px;
+	}
+
+	.tam-diferente {
+		width: 200px;
+		height: 200px;
+	}
+
+</style>
+<body><!--  pai de todo o corpo -->
+	<main><!--  elemento filho de body -->
+		<div></div><!--  elemento filho de main -->
+		<div class="tam-diferente"></div>
+	</main>
+	
+</body>
+</html>
